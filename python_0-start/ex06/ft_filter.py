@@ -18,12 +18,14 @@ class ft_filter:
 
 
 def keep_odds(nbr: int) -> bool:
+    """ return true if the int arg is an odd, otherwise return false"""
     if nbr % 2 == 0:
         return True
     return False
 
 
 def keep_lower(c: str) -> bool:
+    """return true is the char is lower, otherwise return false"""
     if c.islower():
         return True
     return False
