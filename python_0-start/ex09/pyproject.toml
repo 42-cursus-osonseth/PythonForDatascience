@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ft_package"
+version = "0.0.1"
+authors = [
+  { name = "Mauchretien Max", email = "mmauchre@student.42paris.fr" },
+]
+description = "Package of python for data science"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICENSE"]
+
+[project.urls]
+Homepage = "https://github.com/osonseth"
+Issues = "https://github.com/osonseth"

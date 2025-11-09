@@ -1,5 +1,4 @@
 import builtins
-from typing import Iterable
 
 
 class ft_filter:
@@ -18,7 +17,7 @@ class ft_filter:
 
 
 def keep_odds(nbr: int) -> bool:
-    """ return true if the int arg is an odd, otherwise return false"""
+    """return true if the int arg is an odd, otherwise return false"""
     if nbr % 2 == 0:
         return True
     return False
@@ -33,9 +32,9 @@ def keep_lower(c: str) -> bool:
 
 def main():
     """filter(function or None, iterable) --> filter object
-
-    Return an iterator yielding those items of iterable for which function(item)
-    is true. If function is None, return the items that are true."""
+    Return an iterator yielding those items of iterable for
+    which function(item) is true.
+    If function is None, return the items that are true."""
 
 
 print("----------TEST LIST OF INT ----------------")

@@ -26,7 +26,7 @@ def get_remaining_time_in_str(i: int, len: int, start: int) -> str:
 
 def get_elapsed_and_remaining_time(i: int, len: int, start: int) -> str:
     """Call get_elapsed_time  and get_remaining_time
-        to build a string to return"""
+    to build a string to return"""
     elapsed_str = get_elapsed_time_in_str(start)
     remaining_str = "00:00"
     if i > 0:
@@ -37,7 +37,7 @@ def get_elapsed_and_remaining_time(i: int, len: int, start: int) -> str:
 
 def get_iter_per_sec(i: int, start: int) -> str:
     """Calculate iteration per second and build a
-        string with value to return"""
+    string with value to return"""
     current_time = time.time()
     elapsed_time = current_time - start
     iter_per_sec = i / elapsed_time
