@@ -5,6 +5,7 @@ np.set_printoptions(precision=1, floatmode="fixed")
 
 class calculator:
     """Vector calculator."""
+
     def __init__(self, vector: list):
         """Initialize with vector."""
         self.vector = np.array(vector)
