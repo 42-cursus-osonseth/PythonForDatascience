@@ -40,11 +40,12 @@ class Character(ABC):
 
 class Stark(Character):
     """Concrete class representing a Stark character."""
-    def __init__(self, name: str, is_alive: bool=True):
+
+    def __init__(self, name: str, is_alive: bool = True):
         """Initialize a Stark character with name and alive status."""
         super().__init__(name, is_alive)
 
     def die(self):
         """Mark the Stark character as dead.
-            Change is_alive to False"""
+        Change is_alive to False"""
         self.is_alive = False

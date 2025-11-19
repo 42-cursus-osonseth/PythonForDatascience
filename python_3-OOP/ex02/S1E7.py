@@ -5,6 +5,7 @@ class Baratheon(Character):
     """Representing the Baratheon family."""
 
     def __init__(self, name: str, is_alive: bool = True):
+        """Initialize Baratheon."""
         super().__init__(name, is_alive)
         self.family_name = "Baratheon"
         self.eyes = "brown"
@@ -20,6 +21,7 @@ class Lannister(Character):
     """Representing Lanister family."""
 
     def __init__(self, name: str, is_alive: bool = True):
+        """Initialize Lanister."""
         super().__init__(name, is_alive)
         self.family_name = "Lannister"
         self.eyes = "blue"
@@ -32,4 +34,5 @@ class Lannister(Character):
 
     @classmethod
     def create_lannister(cls, name: str, is_alive: bool):
+        """return an new object of Lanister"""
         return cls(name, is_alive)
