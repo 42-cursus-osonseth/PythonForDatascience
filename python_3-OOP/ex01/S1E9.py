@@ -24,14 +24,14 @@ class Character(ABC):
         is_alive : bool, optional
             Whether the character is alive (default is True).
         """
-        self.name = name
+        self.first_name = name
         self.is_alive = is_alive
 
     def __str__(self):
-        return f"coucou FDP : {self.eyes}"
+        return f"_ of Vector: ({self.family_name}, {self.eyes}, {self.hairs}"
     
-    # def __repr__(self):
-    #     return self.__str__()
+    def __repr__(self):
+        return self.__str__()
     
     @abstractmethod
     def die(self):

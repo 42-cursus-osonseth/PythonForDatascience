@@ -2,7 +2,7 @@ from S1E9 import Character
 
 
 class Baratheon(Character):
-
+    """Representing the Baratheon family."""
     def __init__(self, name: str, is_alive: bool = True):
         super().__init__(name, is_alive)
         self.family_name = "Baratheon"
@@ -16,6 +16,7 @@ class Baratheon(Character):
 
 
 class Lannister(Character):
+    """Representing Lanister family."""
     def __init__(self, name: str, is_alive: bool = True):
         super().__init__(name, is_alive)
         self.family_name = "Lannister"
@@ -27,4 +28,7 @@ class Lannister(Character):
         Change is_alive to False"""
         self.is_alive = False
 
-    # def create_lannister():
+    @classmethod
+    def create_lannister(cls, name: str, is_alive: bool):
+        return cls(name, is_alive)
+        
